@@ -1,0 +1,160 @@
+﻿@page "/groups"
+@inject HttpClient Http
+@rendermode InteractiveServer
+
+<h3>PermissionGroups</h3>
+
+@if (groupList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Rights</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < mergedDataList.Count; i++)
+            {
+                MergedData mergedData = mergedDataList[i];
+                <tr>
+                    <td>@mergedData.PermissionGroup.Id</td>
+                    <td><input @bind-value:event="oninput" @bind-value="@mergedData.PermissionGroup.Name" /></td>
+                    <td><Input value="@mergedData.Rights" /></td>
+                </tr>
+            }
+            <tr>
+                    <td>@nextId</td>
+                    <td><input @bind-value:event="oninput" @bind-value="@NewPermissionGroupName" /></td>
+                    <td><Input value="" /></td>
+            </tr>
+        </tbody>
+    </table>
+}
+
+<button @onclick=ConsoleLog>ConsoleLog</button>
+<button @onclick=SaveState>Save</button>
+
+@code {
+    PermissionGroup[] groupList;
+    List<MergedData> mergedDataList = new List<MergedData>();
+    int nextId;
+    string NewPermissionGroupName = String.Empty;
+
+    // Play around with Two-Way-Databinding
+    EventCallback<MergedData> DataCallback { get; set; }
+
+    public void ConsoleLog()
+    {
+        Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        Console.WriteLine(mergedDataList[0].PermissionGroup.Name);
+        Console.WriteLine(groupList[0].Name);
+        Console.WriteLine(nextId);
+        Console.WriteLine(NewPermissionGroupName);
+    }
+
+    public async void SaveState()
+    {
+        foreach (MergedData mergedData in mergedDataList)
+        {
+            HttpContent httpContent = JsonContent.Create(mergedData.PermissionGroup);
+            await Http.PutAsync("groups/update", httpContent);
+        }
+        if (NewPermissionGroupName != String.Empty)
+        {
+            PermissionGroup newGroup = new PermissionGroup() { Name = NewPermissionGroupName };
+            await this.AddNewAsync(newGroup);
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        //Console.WriteLine(Http);
+
+        // DataAccessLayer
+        // @inject PermissionGroupAccessLayer PermissionGroupAccess
+        // groupList = PermissionGroupAccess.GetAllPermissionGroups().ToArray();
+
+        // TODO Move this outside (Maybe not necessary but could be cleaner idk??)
+        Http.BaseAddress = new Uri("http://localhost:5019/");
+        // builder.Services.AddHttpClient("Client", c => c.BaseAddress = new Uri("http://localhost:5019/"));
+        Console.WriteLine(Http.BaseAddress);
+        try
+        {
+            groupList = await Http.GetFromJsonAsync<PermissionGroup[]>("groups/all");
+            nextId = groupList.Count() + 1;
+            foreach (PermissionGroup group in groupList)
+            {
+                MergedData mergedData = new MergedData(group, await this.GetRelatedData(group.Id));
+                mergedDataList.Add(mergedData);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.WriteLine(ex.Message);
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++");
+        }
+    }
+
+    protected async Task AddNewAsync(PermissionGroup newPermissionGroup)
+    {
+        Console.WriteLine("Custom Method Output:");
+        Console.WriteLine(Http.BaseAddress);
+
+        // PermissionGroup newPermissionGroup = new PermissionGroup() { Name = "Dummy" };
+
+
+        // TODO define Object in HttpContent (As JSON?)
+        // HttpContent httpContent = new StringContent("");
+        // HttpContent httpContent = JsonContent.Create(new PermissionGroup() { Name = "Dummy" });
+        HttpContent httpContent = JsonContent.Create(newPermissionGroup);
+        Console.WriteLine(await httpContent.ReadAsStringAsync());
+        await Http.PostAsync("groups/create", httpContent);
+    }
+
+    protected async Task<IEnumerable<GroupRight>> GetRelatedData(int id)
+    {
+        // Implement GroupRight Controller and DataAccessLayer
+        // IEnumerable<>
+        try
+        {
+            return await Http.GetFromJsonAsync<GroupRight[]>($"rights/{id}/related");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("_________________________________________________");
+            Console.WriteLine(ex.Message);
+            Console.WriteLine("_________________________________________________");
+            throw;
+        }
+    }
+
+    protected class MergedData
+    {
+        public PermissionGroup PermissionGroup;
+        public string Rights;
+
+        public MergedData(PermissionGroup permissionGroup, IEnumerable<GroupRight> groupRights)
+        {
+            this.PermissionGroup = permissionGroup;
+            this.Rights = String.Join(',', this.ConvertRights(groupRights));
+        }
+
+        string[] ConvertRights(IEnumerable<GroupRight> groupRights)
+        {
+            GroupRight[] groupRightsArray = groupRights.ToArray();
+            string[] rights = new string[groupRightsArray.Length];
+            for (int i = 0; i < groupRightsArray.Length; i++)
+            {
+                rights[i] = groupRightsArray[i].Area;
+            }
+            return rights;
+        }
+    }
+}

@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\source\\playground\\BlazorTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|d:\\source\\playground\\blazortest\\blazorapp\\components\\pages\\permissiongroups.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\components\\pages\\permissiongroups.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|d:\\source\\playground\\blazortest\\blazorapp\\controllers\\permissiongroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\controllers\\permissiongroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|d:\\source\\playground\\blazortest\\blazorapp\\dataaccess\\permissiongroupaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\dataaccess\\permissiongroupaccesslayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|d:\\source\\playground\\blazortest\\blazorapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|d:\\source\\playground\\blazortest\\blazorapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|d:\\source\\playground\\blazortest\\blazorapp\\models\\usergroupscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\models\\usergroupscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|d:\\source\\playground\\blazortest\\blazorapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|d:\\source\\playground\\blazortest\\blazorapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1267E7E5-5680-4271-88AC-F4CE01D45335}|BlazorApp\\BlazorApp.csproj|solutionrelative:blazorapp\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\source\\playground\\BlazorTest\\BlazorApp\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BlazorApp\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\source\\playground\\BlazorTest\\BlazorApp\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "BlazorApp\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-20T13:08:20.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "D:\\source\\playground\\BlazorTest\\BlazorApp\\Components\\_Imports.razor",
+              "RelativeDocumentMoniker": "BlazorApp\\Components\\_Imports.razor",
+              "ToolTip": "D:\\source\\playground\\BlazorTest\\BlazorApp\\Components\\_Imports.razor",
+              "RelativeToolTip": "BlazorApp\\Components\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-20T10:56:41.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PermissionGroups.razor",
+              "DocumentMoniker": "D:\\source\\playground\\BlazorTest\\BlazorApp\\Components\\Pages\\PermissionGroups.razor",
+              "RelativeDocumentMoniker": "BlazorApp\\Components\\Pages\\PermissionGroups.razor",
+              "ToolTip": "D:\\source\\playground\\BlazorTest\\BlazorApp\\Components\\Pages\\PermissionGroups.razor",
+              "RelativeToolTip": "BlazorApp\\Components\\Pages\\PermissionGroups.razor",
+              "ViewState": "AgIAADgAAAAAAAAAAAAqwFAAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-20T10:52:36.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PermissionGroupController.cs",
+              "DocumentMoniker": "D:\\source\\playground\\BlazorTest\\BlazorApp\\Controllers\\PermissionGroupController.cs",
+              "RelativeDocumentMoniker": "BlazorApp\\Controllers\\PermissionGroupController.cs",
+              "ToolTip": "D:\\source\\playground\\BlazorTest\\BlazorApp\\Controllers\\PermissionGroupController.cs",
+              "RelativeToolTip": "BlazorApp\\Controllers\\PermissionGroupController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T10:05:09.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PermissionGroupAccessLayer.cs",
+              "DocumentMoniker": "D:\\source\\playground\\BlazorTest\\BlazorApp\\DataAccess\\PermissionGroupAccessLayer.cs",
+              "RelativeDocumentMoniker": "BlazorApp\\DataAccess\\PermissionGroupAccessLayer.cs",
+              "ToolTip": "D:\\source\\playground\\BlazorTest\\BlazorApp\\DataAccess\\PermissionGroupAccessLayer.cs",
+              "RelativeToolTip": "BlazorApp\\DataAccess\\PermissionGroupAccessLayer.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIAywCMAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T09:59:02.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserGroupsContext.cs",
+              "DocumentMoniker": "D:\\source\\playground\\BlazorTest\\BlazorApp\\Models\\UserGroupsContext.cs",
+              "RelativeDocumentMoniker": "BlazorApp\\Models\\UserGroupsContext.cs",
+              "ToolTip": "D:\\source\\playground\\BlazorTest\\BlazorApp\\Models\\UserGroupsContext.cs",
+              "RelativeToolTip": "BlazorApp\\Models\\UserGroupsContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T09:44:41.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\source\\playground\\BlazorTest\\BlazorApp\\appsettings.json",
+              "RelativeDocumentMoniker": "BlazorApp\\appsettings.json",
+              "ToolTip": "D:\\source\\playground\\BlazorTest\\BlazorApp\\appsettings.json",
+              "RelativeToolTip": "BlazorApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-20T09:27:44.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\source\\playground\\BlazorTest\\BlazorApp\\Program.cs",
+              "RelativeDocumentMoniker": "BlazorApp\\Program.cs",
+              "ToolTip": "D:\\source\\playground\\BlazorTest\\BlazorApp\\Program.cs",
+              "RelativeToolTip": "BlazorApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T08:44:07.592Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
